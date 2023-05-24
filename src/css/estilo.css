@@ -8,14 +8,9 @@ body {
     justify-content: center;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    
+    background-image: url(../imagem/bg-repeat.jpg);
+    background-size: contain
 
-}
-
-main {
-    background-image: url(/src/imagem/bg-repeat.jpg);
-    min-width: 100vh;
-    border-radius: 5px;
 }
 
 main .container {
