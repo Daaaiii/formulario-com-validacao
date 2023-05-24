@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+body {
+    background-color: #ccc;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    
+
+}
+
+main {
+    background-image: url(/src/imagem/bg-repeat.jpg);
+    min-width: 100vh;
+    border-radius: 5px;
+}
+
+main .container {
+    width: 800px;
+    min-height: 402px;
+    display: flex;
+    align-items: center;
+    margin: 40px;
+}
+
+.conteudo {
+    color: #FFFF;
+    margin-right: 40px;
+}
+
+.conteudo h1 {
+    font-weight: 900;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 11px;
+}
+
+.formulario {
+    background-color: #FFFF;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 5px;
+    
+}
+.form-control{
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    
+}
+
+input,
+textarea {
+    margin-bottom: 15px;
+    width: 285px;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 15px;
+    border: 1px solid #000;
+}
+input::placeholder, textarea::placeholder{
+    color: #A8A8A8;
+
+}
+
+.formulario p {
+    align-self: flex-start;
+    padding-left: 35px;
+    padding-bottom: 10px;
+}
+
+ .formulario button {
+    background: #3CCC87;
+    border-radius: 5px;
+    color: #FFFF;
+    width: 90%;
+    padding: 10px;
+    text-align: center;
+}
+.form-control small{
+    position: absolute;
+    visibility: hidden;
+    
+}
+
+.form-control.success input,
+.form-control.success textarea{
+    border: 2px solid  #00C22B;
+}
+.form-control.error input,
+.form-control.error textarea{
+    border: 2px solid #F52E2E;
+}
+
+.form-control.error small{
+    color: #F52E2E ;
+    visibility: visible;
+    
+}
